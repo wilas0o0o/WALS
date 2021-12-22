@@ -71,14 +71,14 @@ header {
   background-color: #eceff1;
 }
 
-.pf-title {
+.title {
   padding-top: 90px;
   padding-bottom: 8px;
   font-size: 32px;
   color: #000;
   text-align: center;
 }
-.pf-title::after {
+.title::after {
  content: "";
  display: block;
  margin: 8px auto 0 auto;
@@ -87,7 +87,7 @@ header {
  background-color: #ec715f;
 }
 
-.pf-content {
+.content {
   text-align: center;
   margin: 30px 0;
 }
@@ -136,6 +136,76 @@ header {
   background-image: url(img/webcamp-mother.png);
   margin-right: 0;
   margin-bottom: 0;
+}
+
+.strength-box {
+  width: 980px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.strength {
+  width: 320px;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.strength-title {
+  padding: 10px auto;
+  font-size: 20px;
+}
+
+.strength:last-child {
+  margin-right: 0;
+}
+
+.strength-text {
+  padding-top: 10px;
+  font-size: 16px;
+  text-align: left;
+}
+
+#profile {
+  background-color: #eceff1;
+}
+
+.profile-group {
+  width: 1024px;
+  display: flex;
+  padding-bottom: 90px;
+}
+
+.profile-image {
+  width: 512px;
+  text-align: center;
+}
+
+.image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.profile-text {
+  width: 512px;
+}
+
+.name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.profile-text > p {
+  font-size: 16px;
+}
+
+.skill {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 footer {
