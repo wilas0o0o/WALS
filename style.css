@@ -208,6 +208,57 @@ header {
   margin-bottom: 5px;
 }
 
+.contact-group {
+  width: 800px;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.left-contact {
+  width: 50%;
+}
+
+.adress {
+  width: 130px;
+  margin: 0 auto;
+}
+
+.adress > h2 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.adress > p {
+  text-decoration: underline;
+}
+
+.mail-adress {
+  margin-bottom: 20px;
+}
+
+.right-contact {
+  width: 50%;
+}
+
+.sns {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.sns > h2 {
+  font-size: 20px;
+}
+
+.sns >.fab {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.fab:last-child {
+  margin-right: 0;
+}
+
 footer {
   height: 60px;
   width: 100%;
