@@ -39,8 +39,36 @@ header {
   padding: 0 30px;
   list-style: none;
 }
+
 .nav-list a {
   color: #fafafa;
+}
+
+#mv {
+  background-image: url(img/mv.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  height: 650px;
+  width: 100%;
+  display: flex;
+}
+
+.mv-text {
+  position: relative;
+  margin: 200px auto ;
+}
+
+.mv-title {
+  font-size: 64px;
+  color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.mv-content {
+  font-size: 20px;
+  color: #fafafa;
+  text-align: center;
 }
 
 footer {
