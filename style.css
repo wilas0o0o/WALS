@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
 }
 
-.logo {
+.header-logo {
   height: 70px;
 }
 
@@ -73,9 +73,7 @@ header {
 
 .title {
   padding-top: 90px;
-  padding-bottom: 8px;
   font-size: 32px;
-  color: #000;
   text-align: center;
 }
 .title::after {
@@ -89,12 +87,12 @@ header {
 
 .content {
   text-align: center;
-  margin: 30px 0;
+  padding-top: 30px;
 }
 
 .pf-image-box {
   width: 920px;
-  padding-bottom: 90px;
+  padding: 30px 0 90px 0;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -138,11 +136,10 @@ header {
   margin-bottom: 0;
 }
 
-.strength-box {
+.strength-group {
   width: 980px;
-  padding-bottom: 90px;
+  padding: 30px 0 90px 0;
   display: flex;
-  justify-content: center;
   margin: 0 auto;
 }
 
@@ -154,7 +151,7 @@ header {
 }
 
 .strength-title {
-  padding: 10px auto;
+  padding: 10px 0;
   font-size: 20px;
 }
 
@@ -163,7 +160,6 @@ header {
 }
 
 .strength-text {
-  padding-top: 10px;
   font-size: 16px;
   text-align: left;
 }
@@ -173,24 +169,24 @@ header {
 }
 
 .profile-group {
-  width: 1024px;
   display: flex;
-  padding-bottom: 90px;
+  padding: 30px 0 90px 0;
 }
 
-.profile-image {
-  width: 512px;
-  text-align: center;
+.left-content {
+  width: 50%;
 }
 
-.image {
+.my-face {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  background-image: url(img/my-icon.jpg);
+  margin: 0 auto;
 }
 
-.profile-text {
-  width: 512px;
+.right-content {
+  width: 50%;
 }
 
 .name {
@@ -212,50 +208,39 @@ header {
   width: 800px;
   display: flex;
   margin: 0 auto;
-  padding-bottom: 90px;
+  padding: 30px 0 90px 0;
 }
 
-.left-contact {
-  width: 50%;
-}
-
-.adress {
+.left-contact-content {
   width: 130px;
   margin: 0 auto;
 }
 
-.adress > h2 {
+.contact-content-title {
   font-size: 20px;
-  padding-bottom: 5px;
+  margin: 20px 0 5px 0;
 }
 
-.adress > p {
+.contact-content-title:first-child {
+  margin-top: 0;
+}
+
+.contact-content-text {
   text-decoration: underline;
+  color: #212121;
 }
 
-.mail-adress {
-  margin-bottom: 20px;
-}
-
-.right-contact {
-  width: 50%;
-}
-
-.sns {
-  width: 200px;
+.right-contact-content {
+  width: 180px;
   margin: 0 auto;
 }
 
-.sns > h2 {
-  font-size: 20px;
-}
-
-.sns >.fab {
+.right-contact-content .fa {
   font-size: 50px;
   margin-right: 20px;
 }
 
-.fab:last-child {
+.right-contact-content .fa:last-child {
   margin-right: 0;
 }
 
@@ -270,4 +255,117 @@ footer {
   font-size: 16px;
   color: #fafafa;
   line-height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 50px;
+  }
+
+  .header-logo {
+    height: 50px;
+  }
+
+  .menu-box {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #FAFAFA;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+  }
+
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  #mv {
+    background-image: url(img/code.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .pf-image-box {
+    width: 300px;
+    display: block;
+  }
+
+  .pf-image:nth-child(odd) {
+    display: none;
+  }
+  
+  .pf-image:nth-child(2) {
+  margin-bottom: 10px;
+  margin-right: 0;
+ }
+
+ .pf-image:nth-child(4) {
+  margin-bottom: 10px;
+  margin-right: 0;
+ }
+
+ .pf-image:nth-child(6) {
+  margin-bottom: 0px;
+  margin-right: 0;
+ }
+
+ .strength-group {
+   width: 300px;
+   display: block;
+ }
+
+ .strength {
+   margin-right: 0;
+   margin-bottom: 10px;
+ }
+
+ .profile-group {
+   flex-flow: row wrap;
+   text-align: center;
+ }
+
+ .right-content {
+  width: 100%;
+}
+
+.left-content {
+  width: 100%;
+}
+
+ .my-face {
+   margin-bottom: 20px;
+ }
+
+ .contact-group {
+   width: 100%;
+   flex-flow: row wrap;
+   text-align: center;
+ }
+
+ .left-contact-content {
+   width: 100%;
+ }
+
+ .right-contact-content {
+   width: 100%;
+   margin-top: 20px;
+ }
+
 }

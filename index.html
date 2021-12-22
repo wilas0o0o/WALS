@@ -2,15 +2,22 @@
 <html lang ="ja">
   <head>
     <meta charset="urf-8">
-    <script src="https://kit.fontawesome.com/f656cbd2da.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=devise-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <script src="https://kit.fontawesome.com/f656cbd2da.js" crossorigin="anonymous"></script>
     <title>WALS成果物</title>
   </head>
   <body>
     <!-----------------Header----------------->
     <header>
       <div class="container header-group">
-        <a href="#mv"><img class="logo" src="img/logo.png"></a>
+        <a href="#mv"><img class="header-logo" src="img/logo.png"></a>
+        <div class="menu-box">
+          <span class="list-bar"></span>
+          <span class="list-bar"></span>
+          <span class="list-bar"></span>
+        </div>
         <nav>
           <ul class="nav">
             <li class="nav-list"><a href="#portfolio">Portfolio</a></li>
@@ -59,20 +66,20 @@
           content of a page when looking at its layout. <br>
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
-        <div class="strength-box">
+        <div class="strength-group">
           <div class="strength">
-            <i class="fas fa-code"></i>
-            <p class="strength-title">Strength1</p>
+            <i class="fa fa-code"></i>
+            <h3 class="strength-title">Strength1</h3>
             <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
           </div>
           <div class="strength">
-            <i class="fas fa-desktop"></i>
-            <p class="strength-title">Strength2</p>
+            <i class="fa fa-desktop"></i>
+            <h3 class="strength-title">Strength2</h3>
             <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
           </div>
           <div class="strength">
-            <i class="fas fa-cogs"></i>
-            <p class="strength-title">Strength3</p>
+            <i class="fa fa-cogs"></i>
+            <h3 class="strength-title">Strength3</h3>
             <p class="strength-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
           </div>
         </div>
@@ -89,8 +96,10 @@
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
         <div class="profile-group">
-          <div class="profile-image"><img class="image" src="img/my-icon.jpg"></div>
-          <div class="profile-text">
+          <div class="left-content">
+            <div class="my-face"></div>
+          </div>
+          <div class="right-content">
             <h2 class="name">MyName</h2>
             <p class="name-content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur</p>
             <h2 class="skill">MySkills</h2>
@@ -110,20 +119,20 @@
           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters
         </p>
         <div class="contact-group">
-          <div class="left-contact">
-            <div class="adress">
-              <h2>Mail</h2>
-              <p class="mail-adress">xxx@xxx.com</p>
-              <h2>Tel</h2>
-              <p>000-0000-0000</p>
+          <div class="left-content">
+            <div class="left-contact-content">
+              <h3 class="contact-content-title">Mail</h3>
+              <a class="contact-content-text link-text">xxx@xxx.com</a>
+              <h3 class="contact-content-title">Tel</h3>
+              <a class="contact-content-text link-text">000-0000-0000</a>
             </div>
           </div>
-          <div class="right-contact">
-            <div class="sns">
-              <h2>SNS</h2>
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
+          <div class="right-content">
+            <div class="right-contact-content">
+              <h3 class="contact-content-title">SNS</h3>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-instagram"></i>
             </div>
           </div>
         </div>
